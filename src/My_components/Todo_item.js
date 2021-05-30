@@ -7,6 +7,6 @@ export const Todo_item = ({todo,onDelete}) => {
             <h3>{todo.discription}</h3>
             <h3>{todo.title}</h3>
             <button onClick={()=>onDelete(todo)}>Delete</button>
-        </div>
+        </div> 
     )
 }
