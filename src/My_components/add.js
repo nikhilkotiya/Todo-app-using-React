@@ -9,7 +9,11 @@ export const AddTodo=(props)=> {
         if(!title||!desc){
             alert("title requred")
         }
-        props.addtodo(title,desc);
+        else{ 
+            props.addtodo(title,desc);
+            setDesc("");
+            setTitle("");
+        }
     }
     return (
         <>
