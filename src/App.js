@@ -13,14 +13,12 @@ import {
 
 function App() {
   let initodo;
-  if (localStorage.getItem("todos") === null) {
+  if (localStorage.getItem("todos") === null){
     initodo=[];
   }
   else {
     initodo = JSON.parse(localStorage.getItem("todos"));
   }
-
-
   const onDelete = (todo) => {
     console.log("I am on delete", todo)
     setTodos(todos.filter((e) => {
